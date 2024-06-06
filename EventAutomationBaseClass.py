@@ -20,20 +20,19 @@ class EventAutomation:
         self.wait = WebDriverWait(self.driver, 20)
         self.exceptions = (TimeoutException, NoSuchElementException) 
 
-    def logs(self):
+   def logs(self):
         return
-    logs = self.driver.get_log('performance')
-    # res_dict = dict(logs)
-    # data = json.loads(logs)
-    # print(log)
-    perf = {'e': []}
+            logs = self.driver.get_log('performance')
+        # res_dict = dict(logs)
+        # data = json.loads(logs)
+        # print(log)
+            perf = {'e': []}
     for i, en in enumerate(logs):
         # print(en)
         if 'event_name' in str(en):
             j = json.loads(en['message'])
             k = j["message"]['params']['request']['postData']
-            print(k.split('&'))
-
+            print(k.split('&
 
     def finds_elements(self, xpath, key=''):
         try:
