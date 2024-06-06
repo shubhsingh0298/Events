@@ -4,12 +4,6 @@ import json
 from datetime import datetime
 import csv
 from datetime import date
-options = Options()
-# options.add_argument("--headless")
-options.add_argument("--disable-extensions")
-options.add_argument("--disable-dev-shm-usage")
-options.add_argument("--no-sandbox")
-
 
 class EventAutomation:
 
