@@ -549,7 +549,7 @@ class RawEventsTesting(EventAutomation):
         val2 = 'filter type value'
         eve_id = '226'
         self.report_genrate_global(self.print_visitor_id(), con, val1, val2, eve_id, url)
- def run_program():
+    def run_program():
     program_dict = {
 
         'eve_212' : 'eve_212("https://www.raptorsupplies.com/")',
