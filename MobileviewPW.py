@@ -394,7 +394,7 @@ class RawEventsTesting(EventAutomation):
         val2 = ''
         eve_id = '224'
         self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
-      def eve_224_l3(self, url):
+     def eve_224_l3(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@id="eve_224"]')
         self.print_visitor_id()
