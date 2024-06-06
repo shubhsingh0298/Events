@@ -1,6 +1,5 @@
 import time
 from EventAutomationBaseClass import EventAutomation
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 
 
