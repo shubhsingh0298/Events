@@ -550,7 +550,7 @@ class RawEventsTesting(EventAutomation):
         eve_id = '226'
         self.report_genrate_global(self.print_visitor_id(), con, val1, val2, eve_id, url)
     def run_program():
-    program_dict = {
+        program_dict = {
 
         'eve_212' : 'eve_212("https://www.raptorsupplies.com/")',
         'eve_213' : 'eve_213("https://www.raptorsupplies.com/")',
@@ -602,7 +602,7 @@ class RawEventsTesting(EventAutomation):
         'eve_226_mother': 'eve_226_mother("https://www.raptorsupplies.com/c/fasteners/p/epoxy-adhesive-anchors")',
         'eve_226_l3': 'eve_226_l3("https://www.raptorsupplies.com/c/fasteners/c3/adhesive-anchor-accessories")',
         }
-     testing = RawEventsTesting()
+    testing = RawEventsTesting()
     keys = list(program_dict.keys())
     start_index = 34
     for i, key in enumerate(keys[start_index:], start_index):
@@ -615,15 +615,15 @@ class RawEventsTesting(EventAutomation):
                 time.sleep(5)
             else:
                 print(f"Method {method_name} not found in RawEventsTesting")
-# #     for key in keys_to_run:
-# #       if key in program_dict:
-#             print(">>>>>>>>>>> Working Template >>>>>>>>>", key)
-#             method_name = program_dict[key]
-#             method = getattr(testing, method_name, None)
-#             if method:
-#                 method()
-#             else:
-#                 print(f"Method {method_name} not found in RawEventsTesting")
+    # for key in keys_to_run:
+    #   if key in program_dict:
+    #         print(">>>>>>>>>>> Working Template >>>>>>>>>", key)
+    #         method_name = program_dict[key]
+    #         method = getattr(testing, method_name, None)
+    #         if method:
+    #             method()
+    #         else:
+    #             print(f"Method {method_name} not found in RawEventsTesting")
     testing.driver_quit()
 
 #     testing.driver_quit()
