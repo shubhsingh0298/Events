@@ -1,5 +1,4 @@
 import time
-from selenium.common import exceptions
 from EventAutomationBaseClass import EventAutomation
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
