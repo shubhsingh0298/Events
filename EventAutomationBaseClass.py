@@ -20,7 +20,7 @@ class EventAutomation:
         self.wait = WebDriverWait(self.driver, 20)
         self.exceptions = (TimeoutException, NoSuchElementException) 
 
-   def logs(self):
+    def logs(self):
     return
     logs = self.driver.get_log('performance')
     # res_dict = dict(logs)
