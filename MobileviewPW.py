@@ -606,15 +606,15 @@ class RawEventsTesting(EventAutomation):
     keys = list(program_dict.keys())
     start_index = 34
     for i, key in enumerate(keys[start_index:], start_index):
-        print(i, ">>>>>>>>>>> Working Template >>>>>>>>>", key), eval(f"testing.{program_dict[key]}")
-        time.sleep(5)
-#     for key in keys_to_run:
-#         if key in program_dict:
-#             print(">>>>>>>>>>> Working Template >>>>>>>>>", key)
-#             eval(f"testing.{program_dict[key]}")
-#             # time.sleep(2)
-
+        if key in program_dict:
+            method_name = program_dict[key]
+            method = getattr(testing, method_name, None)
+            if method:
+                print(i, ">>>>>>>>>>> Working Template >>>>>>>>>", key)
+                method()  # Call the method without eval
+                time.sleep(5)
+            else:
+                print(f"Method {method_name} not found in RawEventsTesting")
     testing.driver_quit()
-# keys_to_run = ["eve_226_mother"]
 run_program()
 
