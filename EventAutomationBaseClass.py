@@ -4,11 +4,12 @@ import json
 from datetime import datetime
 import csv
 from datetime import date
-from selenium.webdriver.chrome.options import ChromeOptions
+from selenium.webdriver.chrome.options import ChromiumOptions
+
 
 class EventAutomation:
    def __init__(self):
-        options = ChromeOptions()
+        options = ChromiumOptions()
         # options.add_argument("--headless")
         options.add_argument("--disable-extensions")
         options.add_argument("--disable-dev-shm-usage")
