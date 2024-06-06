@@ -4,13 +4,18 @@ import json
 from datetime import datetime
 import csv
 from datetime import date
-
+from selenium.webdriver import Chrome, ChromeOptions
 
 class EventAutomation:
-
-    def __init__(self, options):
+   def __init__(self):
+        options = ChromeOptions()
+        # options.add_argument("--headless")
+        options.add_argument("--disable-extensions")
+        options.add_argument("--disable-dev-shm-usage")
+        options.add_argument("--no-sandbox")
+        
         self.options = options
-        self.driver = Chrome(service=Service(), options=self.option)
+        self.driver = Chrome(service=Service(), options=self.options)
         self.driver.maximize_window()
         self.wait = WebDriverWait(self.driver, 20)
         self.exceptions = exceptions
