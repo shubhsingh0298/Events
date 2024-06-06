@@ -1,10 +1,10 @@
 import time
 from EventAutomationBaseClass import EventAutomation
-from selenium.webdriver.chrome.options import ChromiumOptions
+from selenium.webdriver.chrome.options import Options
 
 class RawEventsTesting(EventAutomation):
     def __init__(self):
-        options = ChromiumOptions()
+        options = ChromeOptions()
         options.add_argument("--disable-extensions")
         options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--no-sandbox")
