@@ -12,18 +12,19 @@ class RawEventsTesting(EventAutomation):
         options.add_argument("--no-sandbox")
         super().__init__(options)   
           
-    def eve_212(self, url):
-        self.mobile_screen_request(url)
-        # self.chat_box_close()
-        self.finds_elements('//*[@class="sprite mobile-toggle"]')
-        print('icon click')
-        self.finds_elements('//*[@id="eve_212"]')
-        self.print_visitor_id()
-        con = "BPN"
-        val1 = ''
-        val2 = ''
-        eve_id = '212'
-        self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
+     def eve_212(self, url):
+         self.mobile_screen_request(url)
+         # self.chat_box_close()
+         self.finds_elements('//*[@class="sprite mobile-toggle"]')
+         print('icon click')
+         self.finds_elements('//*[@id="eve_212"]')
+         visitor_id = self.print_visitor_id()
+         con = "BPN"
+         val1 = ''
+         val2 = ''
+         eve_id = '212'
+         self.report_genrate(visitor_id, con, val1, val2, eve_id)
+
     def eve_213(self, url):
         self.mobile_screen_request(url)
         time.sleep(10)
