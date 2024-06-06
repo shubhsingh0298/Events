@@ -1,12 +1,7 @@
 import time
 from EventAutomationBaseClass import EventAutomation
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
-options = Options()
-options.add_argument("--disable-extensions")
-options.add_argument("--disable-dev-shm-usage")
-options.add_argument("--no-sandbox")
 
 
 class RawEventsTesting(EventAutomation):
