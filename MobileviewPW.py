@@ -1,7 +1,9 @@
 import time
+from selenium.common import exceptions
 from EventAutomationBaseClass import EventAutomation
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 options = Options()
 options.add_argument("--disable-extensions")
