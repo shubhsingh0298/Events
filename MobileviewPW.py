@@ -614,7 +614,7 @@ class RawEventsTesting(EventAutomation):
 #             eval(f"testing.{program_dict[key]}")
 #             # time.sleep(2)
 
-#     testing.driver_quit()
+    testing.driver_quit()
 # keys_to_run = ["eve_226_mother"]
 run_program()
 
