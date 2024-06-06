@@ -1,7 +1,5 @@
 import time
 from EventAutomationBaseClass import EventAutomation
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver import Chrome, ChromeOptions
 
 class RawEventsTesting(EventAutomation):
     def __init__(self):
