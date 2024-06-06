@@ -148,7 +148,7 @@ class RawEventsTesting(EventAutomation):
         val2 = ''
         eve_id = '220'
         self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
-     def eve_221(self, url):
+      def eve_221(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@class="sprite mobile-toggle"]')
         print('icon click')
@@ -162,7 +162,7 @@ class RawEventsTesting(EventAutomation):
         eve_id = '221'
         self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
 
-    def eve_222(self, url):
+     def eve_222(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@class="sprite mobile-toggle"]')
         print('icon click')
@@ -176,7 +176,7 @@ class RawEventsTesting(EventAutomation):
         val2 = ''
         eve_id = '222'
         self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
-    def eve_223(self, url):
+     def eve_223(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@class="sprite mobile-toggle"]')
         self.finds_elements('//*[@id="eve_214"]')
