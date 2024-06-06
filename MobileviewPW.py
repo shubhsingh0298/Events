@@ -18,7 +18,7 @@ class RawEventsTesting(EventAutomation):
         val2 = ''
         eve_id = '212'
         self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
-     def eve_213(self, url):
+    def eve_213(self, url):
         self.mobile_screen_request(url)
         time.sleep(10)
         self.finds_elements('//*[@class="sprite mobile-toggle"]')
@@ -32,7 +32,7 @@ class RawEventsTesting(EventAutomation):
         val2 = ''
         eve_id = '213'
         self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
-     def eve_214(self, url):
+    def eve_214(self, url):
         self.mobile_screen_request(url)
         # time.sleep(10)
         self.finds_elements('//*[@class="sprite mobile-toggle"]')
@@ -43,7 +43,7 @@ class RawEventsTesting(EventAutomation):
         val2 = ''
         eve_id = '214'
         self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
-     def eve_215(self, url):
+    def eve_215(self, url):
         self.mobile_screen_request(url)
         # time.sleep(10)
         self.finds_elements('//*[@class="sprite mobile-toggle"]')
@@ -56,7 +56,7 @@ class RawEventsTesting(EventAutomation):
         val2 = ''
         eve_id = '215'
         self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
-     def eve_216(self, url):
+    def eve_216(self, url):
         self.mobile_screen_request(url)
         # time.sleep(10)
         self.finds_elements('//*[@class="sprite mobile-toggle"]')
@@ -80,7 +80,7 @@ class RawEventsTesting(EventAutomation):
         val2 = ''
         eve_id = '216'
         self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
-     def eve_217(self, url):
+    def eve_217(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@class="sprite mobile-toggle"]')
         self.finds_elements('//*[@id="eve_212"]')
