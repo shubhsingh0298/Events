@@ -6,7 +6,7 @@ class RawEventsTesting(EventAutomation):
     def __init__(self):
         super().__init__()
           
-     def eve_212(self, url):
+    def eve_212(self, url):
         self.mobile_screen_request(url)
         # self.chat_box_close()
         self.finds_elements('//*[@class="sprite mobile-toggle"]')
