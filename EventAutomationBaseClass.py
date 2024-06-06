@@ -2,7 +2,6 @@ import time
 import json
 # from passcode import password
 from datetime import datetime
-from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.service import Service
 import pymysql
 import csv
