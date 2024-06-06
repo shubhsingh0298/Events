@@ -10,7 +10,7 @@ class RawEventsTesting(EventAutomation):
         options.add_argument("--disable-extensions")
         options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--no-sandbox")
-        super().__init__(options)   
+        
           
      def eve_212(self, url):
         self.mobile_screen_request(url)
