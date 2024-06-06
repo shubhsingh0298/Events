@@ -3,14 +3,8 @@ from EventAutomationBaseClass import EventAutomation
 from selenium.webdriver.chrome.options import ChromiumOptions
 
 class RawEventsTesting(EventAutomation):
-     def __init__(self):
-        options = ChromiumOptions()  
-        super().__init__(options)
-        options = ChromiumOptions()
-        options.add_argument("--disable-extensions")
-        options.add_argument("--disable-dev-shm-usage")
-        options.add_argument("--no-sandbox")
-        
+    def __init__(self):
+        super().__init__()
           
      def eve_212(self, url):
         self.mobile_screen_request(url)
@@ -555,7 +549,7 @@ class RawEventsTesting(EventAutomation):
         val2 = 'filter type value'
         eve_id = '226'
         self.report_genrate_global(self.print_visitor_id(), con, val1, val2, eve_id, url)
-def run_program():
+ def run_program():
     program_dict = {
 
         'eve_212' : 'eve_212("https://www.raptorsupplies.com/")',
@@ -608,19 +602,31 @@ def run_program():
         'eve_226_mother': 'eve_226_mother("https://www.raptorsupplies.com/c/fasteners/p/epoxy-adhesive-anchors")',
         'eve_226_l3': 'eve_226_l3("https://www.raptorsupplies.com/c/fasteners/c3/adhesive-anchor-accessories")',
         }
-    testing = RawEventsTesting()
+     testing = RawEventsTesting()
     keys = list(program_dict.keys())
-    # start_index = 34
-    # for i, key in enumerate(keys[start_index:], start_index):
-    #     print(i, ">>>>>>>>>>> Working Template >>>>>>>>>", key), eval(f"testing.{program_dict[key]}")
-    #     time.sleep(5)
-    for key in keys_to_run:
+    start_index = 34
+    for i, key in enumerate(keys[start_index:], start_index):
         if key in program_dict:
-            print(">>>>>>>>>>> Working Template >>>>>>>>>", key)
-            eval(f"testing.{program_dict[key]}")
-            # time.sleep(2)
-
+            method_name = program_dict[key]
+            method = getattr(testing, method_name, None)
+            if method:
+                print(i, ">>>>>>>>>>> Working Template >>>>>>>>>", key)
+                method()  # Call the method without eval
+                time.sleep(5)
+            else:
+                print(f"Method {method_name} not found in RawEventsTesting")
+# #     for key in keys_to_run:
+# #       if key in program_dict:
+#             print(">>>>>>>>>>> Working Template >>>>>>>>>", key)
+#             method_name = program_dict[key]
+#             method = getattr(testing, method_name, None)
+#             if method:
+#                 method()
+#             else:
+#                 print(f"Method {method_name} not found in RawEventsTesting")
     testing.driver_quit()
-keys_to_run = ["eve_226_mother"]
+
+#     testing.driver_quit()
+# keys_to_run = ["eve_226_mother"]
 run_program()
 
