@@ -21,7 +21,7 @@ class EventAutomation:
         self.exceptions = (TimeoutException, NoSuchElementException) 
 
     def logs(self):
-    return
+        return
     logs = self.driver.get_log('performance')
     # res_dict = dict(logs)
     # data = json.loads(logs)
