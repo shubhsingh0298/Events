@@ -412,7 +412,7 @@ class RawEventsTesting(EventAutomation):
         val2 = ''
         eve_id = '224'
         self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
-     def eve_224_p(self, url):
+      def eve_224_p(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@id="eve_224"]')
         self.print_visitor_id()
@@ -421,17 +421,7 @@ class RawEventsTesting(EventAutomation):
         val2 = ''
         eve_id = '224'
         self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
-     def eve_224_c3(self, url):
-        self.mobile_screen_request(url)
-        self.finds_elements('//*[@id="eve_224"]')
-        self.print_visitor_id()
-        con = "BP"
-        val1 = ''
-        val2 = ''
-        eve_id = '224'
-        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
-
-     def eve_224_c4(self, url):
+      def eve_224_c3(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@id="eve_224"]')
         self.print_visitor_id()
@@ -441,7 +431,17 @@ class RawEventsTesting(EventAutomation):
         eve_id = '224'
         self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
 
-     def eve_225_c3(self,url):
+      def eve_224_c4(self, url):
+        self.mobile_screen_request(url)
+        self.finds_elements('//*[@id="eve_224"]')
+        self.print_visitor_id()
+        con = "BP"
+        val1 = ''
+        val2 = ''
+        eve_id = '224'
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
+
+      def eve_225_c3(self,url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@id="eve_224"]')
         time.sleep(2)
@@ -453,7 +453,7 @@ class RawEventsTesting(EventAutomation):
         eve_id = '225'
         self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
 
-     def eve_225_c4(self,url):
+      def eve_225_c4(self,url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@id="eve_224"]')
         time.sleep(2) 
@@ -465,7 +465,7 @@ class RawEventsTesting(EventAutomation):
         eve_id = '225'
         self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
 
-     def eve_225_l2(self, url):
+      def eve_225_l2(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@id="eve_224"]')
         time.sleep(2)
@@ -478,7 +478,7 @@ class RawEventsTesting(EventAutomation):
         eve_id = '225'
         self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
    
-     def eve_225_l3(self, url):
+      def eve_225_l3(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@id="eve_224"]')
         time.sleep(2)
@@ -491,7 +491,7 @@ class RawEventsTesting(EventAutomation):
         eve_id = '225'
         self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
     
-    def eve_225_bfc(self, url):
+     def eve_225_bfc(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@id="eve_224"]')
         time.sleep(2)
@@ -504,7 +504,7 @@ class RawEventsTesting(EventAutomation):
         eve_id = '225'
         self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
     
-     def eve_225_p(self, url):
+      def eve_225_p(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@id="eve_224"]')
         time.sleep(2)
@@ -517,7 +517,7 @@ class RawEventsTesting(EventAutomation):
         eve_id = '225'
         self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
 
-     def eve_226_l3(self, url):
+      def eve_226_l3(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@id="eve_224"]')
         self.finds_elements("//h4[contains(@class, 'filter-title') and text()='Length']")
@@ -530,7 +530,7 @@ class RawEventsTesting(EventAutomation):
         eve_id = '226'
         self.report_genrate_global(self.print_visitor_id(), con, val1, val2, eve_id, url)
 
-     def eve_226_l4(self, url):
+      def eve_226_l4(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@id="eve_224"]')
         self.finds_elements("//h4[contains(@class, 'filter-title') and text()='Thread Length']")
@@ -543,7 +543,7 @@ class RawEventsTesting(EventAutomation):
         eve_id = '226'
         self.report_genrate_global(self.print_visitor_id(), con, val1, val2, eve_id, url)
 
-     def eve_226_mother(self, url):
+      def eve_226_mother(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@id="eve_224"]')
         self.finds_elements("//*[@id='at_22542']")
