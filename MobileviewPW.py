@@ -1,6 +1,6 @@
 import time
 from EventAutomationBaseClass import EventAutomation
-from selenium.webdriver.common.action_chains import ActionChains
+
 
 
 class RawEventsTesting(EventAutomation):
