@@ -1,10 +1,6 @@
 import time
 import json
 # from passcode import password
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common import TimeoutException, NoSuchElementException, StaleElementReferenceException, \
-    ElementClickInterceptedException
 from datetime import datetime
 from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.service import Service
