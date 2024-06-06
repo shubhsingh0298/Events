@@ -1,5 +1,4 @@
 import time
-from selenium.common import *
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from EventAutomationBaseClass import EventAutomation
