@@ -4,6 +4,7 @@ import json
 from datetime import datetime
 import csv
 from datetime import date
+from selenium.webdriver.chrome.options import Options
 options = Options()
 options.add_argument("--disable-extensions")
 options.add_argument("--disable-dev-shm-usage")
