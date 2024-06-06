@@ -5,8 +5,8 @@ from EventAutomationBaseClass import EventAutomation
 
 class RawEventsTesting(EventAutomation):
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, options):
+        super().__init__(options)
     
     def eve_212(self, url):
         self.mobile_screen_request(url)
