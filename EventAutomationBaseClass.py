@@ -8,9 +8,8 @@ from datetime import date
 
 class EventAutomation:
 
-    def __init__(self):
-        # self.test_url = test_url
-        self.option = options
+    def __init__(self, options):
+        self.options = options
         self.driver = Chrome(service=Service(), options=self.option)
         self.driver.maximize_window()
         self.wait = WebDriverWait(self.driver, 20)
