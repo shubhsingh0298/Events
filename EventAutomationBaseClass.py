@@ -8,18 +8,17 @@ from selenium.webdriver.chrome.options import ChromiumOptions
 
 
 class EventAutomation:
-   def __init__(self):
+    def __init__(self):
         options = ChromiumOptions()
         # options.add_argument("--headless")
         options.add_argument("--disable-extensions")
         options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--no-sandbox")
-        
         self.options = options
-        self.driver = Chrome(service=Service(), options=self.options)
+        self.driver = webdriver.Chrome(service=Service(), options=self.options)
         self.driver.maximize_window()
         self.wait = WebDriverWait(self.driver, 20)
-        self.exceptions = exceptions
+        self.exceptions = (TimeoutException, NoSuchElementException) 
 
    def logs(self):
     return
