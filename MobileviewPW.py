@@ -12,19 +12,18 @@ class RawEventsTesting(EventAutomation):
         options.add_argument("--no-sandbox")
         super().__init__(options)   
           
-     def eve_212(self, url):
-         self.mobile_screen_request(url)
-         # self.chat_box_close()
-         self.finds_elements('//*[@class="sprite mobile-toggle"]')
-         print('icon click')
-         self.finds_elements('//*[@id="eve_212"]')
-         visitor_id =  self.print_visitor_id()
-         con = "BPN"
-         val1 = ''
-         val2 = ''
-         eve_id = '212'
-         self.report_genrate(visitor_id, con, val1, val2, eve_id)
-
+   def eve_212(self, url):
+        self.mobile_screen_request(url)
+        # self.chat_box_close()
+        self.finds_elements('//*[@class="sprite mobile-toggle"]')
+        print('icon click')
+        self.finds_elements('//*[@id="eve_212"]')
+        self.print_visitor_id()
+        con = "BPN"
+        val1 = ''
+        val2 = ''
+        eve_id = '212'
+        self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
     def eve_213(self, url):
         self.mobile_screen_request(url)
         time.sleep(10)
@@ -33,23 +32,23 @@ class RawEventsTesting(EventAutomation):
         self.chat_box_close()
         self.finds_elements('//*[@id="countryBgId"]//span')
         print('country close')
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BP"
         val1 = ''
         val2 = ''
         eve_id = '213'
-       self.report_genrate(visitor_id, con, val1, val2, eve_id)
+        self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
     def eve_214(self, url):
         self.mobile_screen_request(url)
         # time.sleep(10)
         self.finds_elements('//*[@class="sprite mobile-toggle"]')
         self.finds_elements("//span[@id='eve_214' and @class='category_click']")
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BP"
         val1 = ''
         val2 = ''
         eve_id = '214'
-       self.report_genrate(visitor_id, con, val1, val2, eve_id)
+        self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
     def eve_215(self, url):
         self.mobile_screen_request(url)
         # time.sleep(10)
@@ -57,12 +56,12 @@ class RawEventsTesting(EventAutomation):
         print('icon click')
         self.finds_elements("//span[@id='eve_215' and @class ='brands_click']")
         print('brand click')
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BP"
         val1 = ''
         val2 = ''
         eve_id = '215'
-       self.report_genrate(visitor_id, con, val1, val2, eve_id)
+        self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
     def eve_216(self, url):
         self.mobile_screen_request(url)
         # time.sleep(10)
@@ -81,12 +80,12 @@ class RawEventsTesting(EventAutomation):
         print('icon click')
         self.finds_elements("//*[@id='eve_216']/span")  
         # print('my profile')
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BPN"
         val1 = ''
         val2 = ''
         eve_id = '216'
-       self.report_genrate(visitor_id, con, val1, val2, eve_id)
+        self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
     def eve_217(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@class="sprite mobile-toggle"]')
@@ -103,12 +102,12 @@ class RawEventsTesting(EventAutomation):
         print('icon click')
         self.finds_elements("//*[@id='eve_217']/span")
         print('orders')
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BPN"
         val1 = ''
         val2 = ''
         eve_id = '217'
-       self.report_genrate(visitor_id, con, val1, val2, eve_id)
+        self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
     def eve_218(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@class="sprite mobile-toggle"]')
@@ -125,36 +124,36 @@ class RawEventsTesting(EventAutomation):
         print('icon click')
         self.finds_elements("//*[@id='eve_218']/span[1]")
         print('coupons')
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BPN"
         val1 = ''
         val2 = ''
         eve_id = '218'
-       self.report_genrate(visitor_id, con, val1, val2, eve_id)
+        self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
     def eve_219(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@class="sprite mobile-toggle"]')
         print('icon click')
         # self.chat_box_close()
         self.finds_elements( "//a[@href='/faq']")
-         visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BPN"
         val1 = ''
         val2 = ''
         eve_id = '219'
-       self.report_genrate(visitor_id, con, val1, val2, eve_id)
+        self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
     def eve_220(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@class="sprite mobile-toggle"]')
         print('icon click')
         self.finds_elements("//a[@href='/terms-conditions']")
         print('t and c')
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BPN"
         val1 = ''
         val2 = ''
         eve_id = '220'
-       self.report_genrate(visitor_id, con, val1, val2, eve_id)
+        self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
     def eve_221(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@class="sprite mobile-toggle"]')
@@ -162,12 +161,12 @@ class RawEventsTesting(EventAutomation):
         self.element_hover('//*[@id="eve_221"]')
         self.finds_elements('//*[@id="eve_221"]')
         print('privacy policy')
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BPN"
         val1 = ''
         val2 = ''
         eve_id = '221'
-       self.report_genrate(visitor_id, con, val1, val2, eve_id)
+        self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
 
     def eve_222(self, url):
         self.mobile_screen_request(url)
@@ -177,32 +176,33 @@ class RawEventsTesting(EventAutomation):
         print('brand click')
         self.finds_elements('//*[@id="eve_222"]')
         print("brand menu")
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BPN"
         val1 = '#Brand Name'
         val2 = ''
         eve_id = '222'
-       self.report_genrate(visitor_id, con, val1, val2, eve_id)
+        self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
     def eve_223(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@class="sprite mobile-toggle"]')
         self.finds_elements('//*[@id="eve_214"]')
         self.finds_elements('//*[@id="eve_223"]/li[2]')
-        visitor_id = self.print_visitor_id()
+        
+        self.print_visitor_id()
         con = "BPN"
         val1 = '#Category Name'
         val2 = ''
         eve_id = '223'
-       self.report_genrate(visitor_id, con, val1, val2, eve_id)
+        self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
     def eve_224(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@id="eve_224"]')
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BP"
         val1 = ''
         val2 = ''
         eve_id = '224'
-       self.report_genrate(visitor_id, con, val1, val2, eve_id)
+        self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
 
     def eve_229(self, url):
         self.mobile_screen_request(url)
@@ -215,24 +215,24 @@ class RawEventsTesting(EventAutomation):
         element = self.driver.find_element(By.ID,'eve_229')
         self.driver.execute_script("arguments[0].click();", element)
         print('Add to cart')
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BP"
         val1 = ''
         val2 = ''
         eve_id = '229'
-       self.report_genrate(visitor_id, con, val1, val2, eve_id)
+        self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
 
     def eve_230(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('/html/body', Keys.END)
         self.finds_elements('//*[@id="float_rfq_btn"]')
         print('rfq')
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BP"
         val1 = ''
         val2 = ''
         eve_id = '230'
-       self.report_genrate(visitor_id, con, val1, val2, eve_id)
+        self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
     def eve_231(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('/html/body', Keys.END)
@@ -241,12 +241,12 @@ class RawEventsTesting(EventAutomation):
         time.sleep(4)
         self.finds_elements('//*[@id="eve_293"]')
         self.finds_elements('//*[@id="eve_231"]')
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BPN"
         val1 = ''
         val2 = ''
         eve_id = '231'
-       self.report_genrate(visitor_id, con, val1, val2, eve_id)
+        self.report_genrate(self.print_visitor_id(),con,val1,val2,eve_id)
 
     def eve_227(self, url):
         self.mobile_screen_request(url)
@@ -258,12 +258,12 @@ class RawEventsTesting(EventAutomation):
         self.finds_elements('//*[@id="eve_224"]')
         element = self.driver.find_element(By.ID, 'abc')
         self.driver.execute_script("arguments[0].click();", element)
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BP"
         val1 = '# Filter_name'
         val2 = '# filter1 value1 | value 2..'
         eve_id = '227'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
     
     def eve_228_l2(self, url):
         self.mobile_screen_request(url)
@@ -273,12 +273,12 @@ class RawEventsTesting(EventAutomation):
         time.sleep(3)
         self.finds_elements('//*[@id="brandFilter"]/div/label[1]')
         self.finds_elements("//*[@id='fil 465895' and text()='3M']")
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BP"
         val1 = '# Filter_name'
         val2 = '# filter1 value1 | value 2..'
         eve_id = '228'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
     def eve_228_fastner(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@id="eve_224"]')
@@ -288,12 +288,12 @@ class RawEventsTesting(EventAutomation):
         self.finds_elements('//*[@id="brandFilter"]/div/label[1]')
         # self.finds_elements("//span[@class='filter-title' and text()='Brand']")
         self.finds_elements("//*[@id='fil 466048' and text()='ANVIL']")
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BP"
         val1 = '# Filter_name'
         val2 = '# filter1 value1 | value 2..'
         eve_id = '228'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
     def eve_15_pd(self, url):
         self.request_func(url)
         add_to_cart = "//*[@id='eve_38']"
@@ -304,12 +304,12 @@ class RawEventsTesting(EventAutomation):
         self.finds_elements(close_cart_popup)
         shop_cart = '//*[@class="cart_icon"]'
         self.finds_elements(shop_cart)
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BPN"
         val1 = '#pd count'
         val2 = ''
         eve_id = '15'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
     def eve_15_mother(self, url):
         self.request_func(url)
         add_to_cart = "//*[@class='addto_cart']"
@@ -320,12 +320,12 @@ class RawEventsTesting(EventAutomation):
         self.finds_elements(close_cart_popup)
         shop_cart = "//span[@class='cart_icon add-to-cart-button']"
         self.finds_elements(shop_cart)
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BPN"
         val1 = '#pd count'
         val2 = ''
         eve_id = '15'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
     def eve_15_l3(self, url):
         self.request_func(url)
         add_to_cart = "//*[@id='atc_0']"
@@ -336,110 +336,110 @@ class RawEventsTesting(EventAutomation):
         self.finds_elements(close_cart_popup)
         shop_cart = "//span[@class='cart_icon add-to-cart-button']"
         self.finds_elements(shop_cart)
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BPN"
         val1 = '#pd count'
         val2 = ''
         eve_id = '15'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
     def eve_15_brand(self, url):
         self.request_func(url)
         shop_cart = "//span[@class='cart_icon add-to-cart-button']"
         self.finds_elements(shop_cart)
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BPN"
         val1 = '#pd count'
         val2 = ''
         eve_id = '15'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
     def eve_15_l2(self, url):
         self.request_func(url)
         shop_cart = "//span[@class='cart_icon add-to-cart-button']"
         self.finds_elements(shop_cart)
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BPN"
         val1 = '#pd count'
         val2 = ''
         eve_id = '15'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
     def eve_15_home(self, url):
         self.request_func(url)
         shop_cart = "//span[@class='cart_icon add-to-cart-button']"
         self.finds_elements(shop_cart)
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BPN"
         val1 = '#pd count'
         val2 = ''
         eve_id = '15'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
 
     def eve_15_grainger(self,url):
         self.request_func(url)
         shop_cart = "//span[@class='cart_icon add-to-cart-button']"
         self.finds_elements(shop_cart)
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BPN"
         val1 = '#pd count'
         val2 = ''
         eve_id = '15'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
 
 
     def eve_224_l2(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@id="eve_224"]')
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BP"
         val1 = ''
         val2 = ''
         eve_id = '224'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
     def eve_224_l3(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@id="eve_224"]')
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BP"
         val1 = ''
         val2 = ''
         eve_id = '224'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
     def eve_224_bfc(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@id="eve_224"]')
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BP"
         val1 = ''
         val2 = ''
         eve_id = '224'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
     def eve_224_p(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@id="eve_224"]')
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BP"
         val1 = ''
         val2 = ''
         eve_id = '224'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
     def eve_224_c3(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@id="eve_224"]')
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BP"
         val1 = ''
         val2 = ''
         eve_id = '224'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
 
     def eve_224_c4(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@id="eve_224"]')
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = "BP"
         val1 = ''
         val2 = ''
         eve_id = '224'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
 
     def eve_225_c3(self,url):
         self.mobile_screen_request(url)
@@ -447,12 +447,11 @@ class RawEventsTesting(EventAutomation):
         time.sleep(2)
         self.finds_elements("//h4[contains(@class, 'filter-title') and text()='Length']")
         self.finds_elements("//*[@id='96']")
-        visitor_id = self.print_visitor_id()
         con = "BP"
         val1 = ''
         val2 = ''
         eve_id = '225'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
 
     def eve_225_c4(self,url):
         self.mobile_screen_request(url)
@@ -460,12 +459,11 @@ class RawEventsTesting(EventAutomation):
         time.sleep(2) 
         self.finds_elements("//h4[contains(@class, 'filter-title') and text()='Length']")
         self.finds_elements("//*[@id='1085']")
-        visitor_id = self.print_visitor_id()
         con = "BP"
         val1 = ''
         val2 = ''
         eve_id = '225'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
 
     def eve_225_l2(self, url):
         self.mobile_screen_request(url)
@@ -473,12 +471,12 @@ class RawEventsTesting(EventAutomation):
         time.sleep(2)
         self.finds_elements("//span[contains(@class, 'filter-title') and text()='Brand']")
         self.finds_elements("//*[@id='brandFilter']/div/label[1]")
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = ""
         val1 = '#Filter type'
         val2 = 'filter type value'
         eve_id = '225'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
    
     def eve_225_l3(self, url):
         self.mobile_screen_request(url)
@@ -486,12 +484,12 @@ class RawEventsTesting(EventAutomation):
         time.sleep(2)
         self.finds_elements("//span[contains(@class, 'filter-title') and text()='Item']")
         self.finds_elements("//*[@id='469097']")
-         visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = ""
         val1 = '#Filter type'
         val2 = 'filter type value'
         eve_id = '225'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
     
     def eve_225_bfc(self, url):
         self.mobile_screen_request(url)
@@ -499,12 +497,12 @@ class RawEventsTesting(EventAutomation):
         time.sleep(2)
         self.finds_elements("//span[contains(@class, 'filter-title') and text()='Item']")
         self.finds_elements("//*[@id='510828']")
-         visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = ""
         val1 = '#Filter type'
         val2 = 'filter type value'
         eve_id = '225'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
     
     def eve_225_p(self, url):
         self.mobile_screen_request(url)
@@ -512,12 +510,12 @@ class RawEventsTesting(EventAutomation):
         time.sleep(2)
         self.finds_elements("//span[@class='filter-title' and text()='Item']")
         self.finds_elements("//label[@id='487359' and @class='nkVisible']")
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = ""
         val1 = '#Filter type'
         val2 = 'filter type value'
         eve_id = '225'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(),con,val1,val2,eve_id,url)
+        self.report_genrate_global(self.print_visitor_id(),con,val1,val2,eve_id,url)
 
     def eve_226_l3(self, url):
         self.mobile_screen_request(url)
@@ -525,12 +523,12 @@ class RawEventsTesting(EventAutomation):
         self.finds_elements("//h4[contains(@class, 'filter-title') and text()='Length']")
         self.finds_elements("//div[@class='serachfilter']/input[@class='search-query filter_Fastener_search']","8")
         self.finds_elements("//*[@id='filtersection']/div[1]/div/div[1]/span")
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = ""
         val1 = '#Filter type'
         val2 = 'filter type value'
         eve_id = '226'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(), con, val1, val2, eve_id, url)
+        self.report_genrate_global(self.print_visitor_id(), con, val1, val2, eve_id, url)
 
     def eve_226_l4(self, url):
         self.mobile_screen_request(url)
@@ -538,28 +536,26 @@ class RawEventsTesting(EventAutomation):
         self.finds_elements("//h4[contains(@class, 'filter-title') and text()='Thread Length']")
         self.finds_elements("//div[@class='serachfilter']/input[@class='search-query filter_Fastener_search']", "3/8")
         self.finds_elements("//*[@id='filtersection']/div[1]/div/div[1]/span")
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = ""
         val1 = '#Filter type'
         val2 = 'filter type value'
         eve_id = '226'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(), con, val1, val2, eve_id, url)
+        self.report_genrate_global(self.print_visitor_id(), con, val1, val2, eve_id, url)
 
     def eve_226_mother(self, url):
         self.mobile_screen_request(url)
         self.finds_elements('//*[@id="eve_224"]')
-        # self.driver.refresh()
         self.finds_elements("//*[@id='at_22542']")
         self.finds_elements("//*[@id='a_22542']", "8")
         self.finds_elements("/html/body/section[2]/div/div/div[1]/aside/div/div/div[2]/div/div/div/div/div[1]/span/i")
-        visitor_id = self.print_visitor_id()
+        self.print_visitor_id()
         con = ""
         val1 = '#Filter type'
         val2 = 'filter type value'
         eve_id = '226'
-        self.report_genrate_global( visitor_id = self.print_visitor_id(), con, val1, val2, eve_id, url)
+        self.report_genrate_global(self.print_visitor_id(), con, val1, val2, eve_id, url)
 def run_program():
-
     program_dict = {
 
         'eve_212' : 'eve_212("https://www.raptorsupplies.com/")',
