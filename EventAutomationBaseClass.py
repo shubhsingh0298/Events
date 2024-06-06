@@ -2,7 +2,6 @@ import time
 import json
 # from passcode import password
 from datetime import datetime
-import pymysql
 import csv
 from datetime import date
 options = Options()
