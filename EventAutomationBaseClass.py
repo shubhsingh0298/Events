@@ -23,8 +23,8 @@ class EventAutomation:
  
     def logs(self):
         return
-            logs = self.driver.get_log('performance')
-            perf = {'e': []}
+        logs = self.driver.get_log('performance')
+        perf = {'e': []}
         for i, en in enumerate(logs):
             if 'event_name' in str(en):
                 j = json.loads(en['message'])
