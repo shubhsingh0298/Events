@@ -1,13 +1,15 @@
 import time
 from EventAutomationBaseClass import EventAutomation
-
-
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver import Chrome, ChromeOptions
 
 class RawEventsTesting(EventAutomation):
-
-    def __init__(self, options):
-        super().__init__(options)
-    
+    def __init__(self):
+        options = ChromeOptions()
+        options.add_argument("--disable-extensions")
+        options.add_argument("--disable-dev-shm-usage")
+        options.add_argument("--no-sandbox")
+        super().__init__(options)   
     def eve_212(self, url):
         self.mobile_screen_request(url)
       
