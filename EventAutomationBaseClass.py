@@ -4,7 +4,7 @@ import json
 from datetime import datetime
 import csv
 from datetime import date
-from selenium.webdriver import Chrome, ChromeOptions
+
 
 class EventAutomation:
    def __init__(self):
