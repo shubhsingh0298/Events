@@ -1,6 +1,5 @@
 import time
 import json
-from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 # from passcode import password
 from selenium.webdriver.chrome.options import Options
