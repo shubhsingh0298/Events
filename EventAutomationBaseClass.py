@@ -192,7 +192,7 @@ class EventAutomation:
 
     def report_genrate(self,visitor_id, con, val1, val2, eve_id):
         try:
-            conn = pymysql.connect(host="production-cms.c5tedj3txtxy.eu-west-1.rds.amazonaws.com", user="raptoradmin", password="Raptorcms2022", database='events', port=3306)
+            conn = paass
             cursor = conn.cursor()
             if str(visitor_id) == 'not generated':
                 cursor.execute("""
